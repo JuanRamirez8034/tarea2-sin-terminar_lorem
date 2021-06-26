@@ -1,10 +1,49 @@
+:root{
+    /*colores menu*/
+    --colorMenuNormal: rgb(132, 0, 255);
+    --colorMenuHover: rgb(79, 0, 136) ;
+    --colorBordeMenu: rgb(46, 1, 78);
+    --colorIconoMenu:rgb(83, 83, 83);
+    --colorSombraIconoMenu: rgb(36, 35, 37);
+    --colorTextoMenu:white;
+
+    /*colores cuerpo*/
+    --colorParrafos: white;
+    --colorSubtitulos:white;
+    --colorTituloPagina:white;
+    --colorPaginaCompleta:orange;
+    --colorSeccionInicio: rgb(158, 134, 0);
+    --colorSeccionProductos: rgb(150, 97, 0);
+    --colorSeccionContactos: rgb(148, 71, 0);
+    --colorSeccionUbicanos: rgb(173, 49, 0);
+    --colorSeccionSocios: rgb(153, 18, 0);
+    --colorPieDePagina: rgb(61, 61, 61);
+    --colorTextoPieDePagina: rgb(126, 42, 42);
+
+    /*colores formulario y barra redes Sociales*/
+    --color_1Desgradado: blue;
+    --color_2Desgradado: green;
+    --colorSombraFormulario:black;
+    --colorBtnNormal: blue;
+    --colorBtnOver:green;
+    --colorFondoRedesSociales:blue;
+    --colorSombraRedesSociales:black;
+    
+    /*colores tarjetas seccion productos*/
+    --colorFondoTarjeta:gray;
+    --colorBordeTarjeta:black;
+    --colorTituloTarjeta: white;
+    --colorFondoTituloTarjeta:black;
+    --colorComentarioTarjeta: white;
+    --colorFondoComentarioTarjeta:rgb(104, 104, 0);
+}
 body{
     padding: 0;
     margin: 0;
     width: 100%;
-    background: rgba(128, 0, 247, 0.479);
     scroll-behavior: smooth;
 }
+
 #ContenedorPagina{
     width: 100%;
     max-width: 1200px;
@@ -25,7 +64,7 @@ header{
 header h1{
     margin: 0rem 0rem 5% 2rem;
     display:inline-block;
-    color:white;
+    color:var(--colorTituloPagina);
     font-size:2rem;
     text-shadow: 0px 5px 10px white;
 }
@@ -33,22 +72,23 @@ header img{
     margin-top:5%;
     margin-left:8%;
     width: 9rem;
-    height: 9rem;
-    opacity: 0.5;
-    
+    height: 9rem;   
 }
-nav span{
+.iconoMenu{
+    
     display:none;
 }
+
 nav{
     top:0;
     position:fixed;
     max-width: 1200px;
     width: 100%;
+    
 }
 nav ul{
     overflow:hidden;
-    background:rgba(227, 12, 255, 0.8);
+    background:var(--colorMenuNormal);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -57,7 +97,7 @@ nav ul li{
     float: left;
 }
 nav ul li a{
-    color: rgb(255, 255, 255);
+    color: var(--colorTextoMenu);
     font-size: 1rem;
     display:block;
     text-decoration: none;
@@ -65,8 +105,7 @@ nav ul li a{
     font-weight: bold;
 }
 nav ul li a:hover{
-    background:rgb(209, 12, 235);
-    text-shadow:0px 0px 15px rgba(128, 0, 247, 1);
+    background:var(--colorMenuHover);
 }
 #inicio, #productos, #contactos, #ubicanos, #socios{
     width: 95%;
@@ -77,13 +116,12 @@ nav ul li a:hover{
 }
 #inicio{
 
-    background: rgba(128, 128, 128, 0.596);
+    background: var(--colorSeccionInicio);
 }
 #inicio img{
     width: 350px;
     height: 450px;
-    float: left;
-    
+    float: left;  
     margin-right: 2rem;
     margin-bottom: 1rem;
     box-shadow: 5px 10px 15px black;
@@ -97,23 +135,25 @@ nav ul li a:hover{
 h2{
     margin-top: 2rem;
     text-align: center;
+    color:var(--colorSubtitulos);
 }
 
 p{
     font-size: 1.5rem;
     text-align: justify;
+    color:var(--colorParrafos);
 }
 #productos{
-    background: rgba(196, 2, 99, 0.603);
+    background: var(--colorSeccionProductos);
 
 }
 .galeria{
     width: 320px ;
     height: 550px;
-    background: rgba(255, 255, 255, 0.829);
+    background: var(--colorFondoTarjeta);
     display: inline-block;
     margin-left: 3.3% ;
-    border: 1px solid black;
+    border: 1px solid var(--colorBordeTarjeta);
     margin-top: 1.5rem;
     box-shadow: 2px 5px 15px;
     border-radius: 1px 50px 1px 1px;
@@ -133,27 +173,28 @@ p{
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
-    background: white;
+    background: var(--colorFondoTituloTarjeta);
+    color:var(--colorTituloTarjeta);
 }
 .galeria p{
     font-size: 1rem;
     margin: 0rem 0.5rem 0.5rem 0.5rem;
     text-align: justify;
-    background: chartreuse;
+    background: var(--colorFondoComentarioTarjeta);
+    color:var(--colorComentarioTarjeta);
 }
 #contactos{
-    background: rgba(126, 1, 63, 0.788);
+    background: var(--colorSeccionContactos);
     
 }
 #contactos form{
-    max-width: 700px;
-    
+    max-width: 700px; 
     width: 80%;
     height: 60%;
-    background: linear-gradient(rgba(114, 89, 89, 0.801), rgba(255, 0, 255, 0.795));
+    background: linear-gradient(var(--color_1Desgradado), var(--color_2Desgradado));
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 1px 5px 15px;
+    box-shadow: 1px 5px 15px var(--colorSombraFormulario);
     border-radius: 3px;
     overflow: hidden;
 }
@@ -196,9 +237,10 @@ form h2{
     margin-top: 3%;
     margin-bottom: 5%;
     height: 5%;
+    background: var(--colorBtnNormal);
 }
 #contactos form input[type="submit"]:hover{
-    background: rgb(9, 196, 109);
+    background: var(--colorBtnOver);
 }
 #redesSociales{
     margin-top: 1rem;
@@ -207,8 +249,8 @@ form h2{
     width: 80%;
     max-width: 700px;
     max-height: 150px;
-    box-shadow: 0px 5px 10px black;
-    background: rgba(60, 179, 114, 0.623);
+    box-shadow: 0px 5px 10px var(--colorSombraRedesSociales);
+    background:var(--colorFondoRedesSociales);
     border-radius: 0px 0px 5px 5px;
     opacity: 0.5;
     transition: 500ms;
@@ -232,7 +274,7 @@ form h2{
     opacity: 1;
 }
 #ubicanos{
-    background: sandybrown;
+    background: var(--colorSeccionUbicanos);
 }
 #ubicanos div{
     width: 90%;
@@ -247,12 +289,16 @@ form h2{
 footer{
     width: 100%;
     height: auto;
-    background: black;
-}
+    background: var(--colorPieDePagina);
+}   
 footer h5{
     text-align: center;
     padding: 3rem 0rem;
-    color:white;
+    color:var(--colorTextoPieDePagina);
+}
+
+#socios{
+    background: var(--colorSeccionSocios);
 }
 /*ajustes de pantalla*/
 @media only screen and (max-width:1080px){
@@ -262,7 +308,7 @@ footer h5{
 }
 @media only screen and (max-width:800px){
     #ContenedorPagina{
-        margin-top: 0;
+        margin-top: 5rem;
         overflow: hidden;
     }
     header{
@@ -270,22 +316,50 @@ footer h5{
         float: left;
         overflow: hidden;
     }
-    
-    nav ul{
-        float: right;
+
+    .iconoMenu{
+        width: 100%;
+        height: 5.2rem;
+        box-shadow: 0px 3px 10px;
+        padding-top: 0.2rem;
+        border-radius: 0.1rem;
         display: block;
-        opacity: 0.2;
+        float: left;
+        background: var(--colorMenuNormal);
     }
-    nav ul:hover{
-        opacity: 1;
+    .iconoMenu li{
+        list-style: none;
+        display: block;
+        width: 3.5rem;
+        background: var(--colorBordeMenu);
+        padding: 0.2rem 0rem;
+        margin-top: 0.6rem;
+        margin-left:3rem;
+        border-radius: 0.1rem;
+        box-shadow: 0px 2px 7px var(--colorSombraIconoMenu);
     }
+    
+    nav{
+        width: 100%;
+        height: 5rem;
+        overflow: hidden;
+    }
+    nav:hover{
+       
+        height: 19rem;
+    }
+    nav ul{
+        float: left;
+        display: block;
+        width:70%;
+    }
+
     nav ul li{
         float:none;
         display: block;
-        width: 25%;
+        width: 100%;
     }
     nav ul li a{
-        color: rgb(255, 255, 255);
         font-size: 1rem;
         display:inline-block;
         text-decoration: none;
@@ -296,7 +370,9 @@ footer h5{
         height: 1rem;
         padding-top:0.75rem;
         padding-bottom: 0.75rem;
-        border-bottom: 1px rgb(227, 12, 255) solid;
+        padding-left: 15%;
+        padding-right: 43%;
+        border-top: 1px var(--colorBordeMenu) solid;
     }
     .configuracion{
         margin-top:15rem;
