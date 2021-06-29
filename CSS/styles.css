@@ -15,7 +15,7 @@
     --colorTituloPagina:white;
     --colorSombraTituloPagina:black;
     --colorPaginaCompleta:rgb(184, 216, 0);
-    --colorSeccionInicio: rgba(0, 140, 175, 0.3);
+    --colorSeccionInicio: rgb(0, 153, 25);
     --colorSeccionProductos: rgb(21, 0, 97);
     --colorSeccionContactos: rgb(163, 0, 114);
     --colorSeccionUbicanos: rgb(189, 0, 47);
@@ -285,6 +285,9 @@ form h2{
     height: 5%;
     background: var(--colorBtnNormal);
     color:white;
+    border: none;
+    font-size:1.2rem;
+    border-radius:10px;
 }
 #contactos form input[type="submit"]:hover{
     background: var(--colorBtnOver);
@@ -469,9 +472,6 @@ footer h5{
        
         height: 19rem;
     }
-    nav:active{
-        height: 5.4rem;
-    }
     nav ul{
         float: left;
         display: block;
@@ -554,14 +554,14 @@ footer h5{
 
 @media only screen and (max-width:480px){
     header img{
-        display:none;
+        margin: 0.2rem 0 0 0;
     }
     header{
         height: 9rem;
     }
     header h1{
         font-size: 2rem;
-        margin-left: 10%;
+        margin-left: 1%;
     }
     .configuracion{
         margin-top:10rem;
@@ -573,6 +573,11 @@ footer h5{
     
 }
 @media only screen and (max-width:380px){
+    header h1{
+        font-size: 1.4rem;
+        margin-left: 0%;
+        margin-top:25%;
+    }
     #socios a{
         border-radius: 50px 50px 15px 15px;
     }
