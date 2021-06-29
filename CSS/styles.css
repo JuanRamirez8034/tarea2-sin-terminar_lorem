@@ -1,0 +1,599 @@
+:root{
+    /*colores menu*/
+    --colorMenuNormal: #e64391;
+    --colorMenuHover: rgb(197, 0, 187) ;
+    --colorBordeMenu: rgb(121, 0, 101);
+    --colorIconoMenu:rgb(236, 236, 236);
+    --colorSombraIconoMenu: none;
+    --colorTextoMenu:rgb(236, 236, 236);
+    --colorTituloMenu:white;
+    --colorSombraTituloMenu: rgb(255, 255, 255);
+
+    /*colores cuerpo*/
+    --colorParrafos: white;
+    --colorSubtitulos:white;
+    --colorTituloPagina:white;
+    --colorSombraTituloPagina:black;
+    --colorPaginaCompleta:rgb(184, 216, 0);
+    --colorSeccionInicio: rgb(0, 153, 25);
+    --colorSeccionProductos: rgb(21, 0, 97);
+    --colorSeccionContactos: rgb(163, 0, 114);
+    --colorSeccionUbicanos: rgb(189, 0, 47);
+    --colorSeccionSocios: rgb(0, 78, 129);
+    --colorPieDePagina: rgb(75, 75, 75);
+    --colorTextoPieDePagina: rgb(253, 253, 253);
+
+    /*colores formulario y barra redes Sociales*/
+    --color_1Desgradado: rgb(0, 106, 226);
+    --color_2Desgradado: rgb(24, 190, 255);
+    --colorSombraFormulario:rgb(3, 185, 145);
+    --colorBtnNormal: rgb(158, 0, 221);
+    --colorBtnOver:rgb(189, 1, 226);
+    --colorFondoRedesSociales:rgb(0, 195, 209);
+    --colorSombraRedesSociales:rgb(70, 0, 0);
+    
+    /*colores tarjetas seccion productos*/
+    --colorFondoTarjeta:rgb(3, 130, 214);
+    --colorBordeTarjeta: none;
+    --colorSombraTarjeta:rgb(2, 2, 2);
+    --colorBordeImagenProductos:black;
+    --colorTituloTarjeta: rgb(255, 255, 255);
+    --colorFondoTituloTarjeta:rgb(221, 92, 17);
+    --colorComentarioTarjeta: rgb(253, 253, 253);
+    --colorFondoComentarioTarjeta:none;
+
+    /*colores tarjetas Socios*/
+    --colorFondoTarjetaSocios:rgb(236, 236, 236);
+    --colorFondoTarjetaSociosHover:rgb(219, 219, 219);
+    --colorBordeTarjetaSocios:white;
+    --colorSombraTarjetaSocios:black;
+    --colorTituloTarjetaSocios: rgb(88, 46, 46);
+    --colorTextoTarjetaSocios:rgb(0, 0, 0);
+    --colorFondoTextoTarjetaSocios:rgb(197, 188, 172);
+    
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+    background: rgba(63, 37, 42, 0.5);
+    
+}
+
+
+#ContenedorPagina{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding:0;
+    background: var(--colorPaginaCompleta);
+    
+}
+header{
+    margin-top:3.12rem;
+    width:100%;
+    height: 22rem;
+    background:url(../img/CorazonGalleta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    overflow: hidden;
+    border-bottom: 10px rgba(0, 0, 0, 0.801) solid;
+}
+header h1{
+    margin: 18% 0rem 7% 2rem;
+    display:block;
+    float:left;
+    color:var(--colorTituloPagina);
+    font-size:2.5rem;
+    text-shadow: 0px 0px 10px var(--colorSombraTituloPagina);
+    font-family: 'Yellowtail', cursive, Arial, Helvetica, sans-serif;
+}
+header img{
+    float:left;
+    margin-top:10%;
+    margin-left:8%;
+    width: 9rem;
+    height: 9rem; 
+    border-radius: 20%;  
+    background: rgba(0, 0, 0, 0.1);
+}
+.iconoMenu{
+    
+    display:none;
+}
+.tMenu{
+    display: none;
+}
+
+nav{
+    top:0;
+    position:fixed;
+    max-width: 1200px;
+    width: 100%;
+    transition: 0.5s;
+    
+}
+nav ul{
+    overflow:hidden;
+    background:var(--colorMenuNormal);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    color: var(--colorTextoMenu);
+    font-size: 1rem;
+    display:block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif ,Arial, Helvetica, sans-serif;
+}
+nav ul li a:hover{
+    background:var(--colorMenuHover);
+    transition: 0.5s;
+}
+#inicio, #productos, #contactos, #ubicanos, #socios{
+    width: 95%;
+    min-height: 540px;
+    height: auto;
+    padding: 1% 2.5%;
+    padding-bottom: 3%;
+    border-bottom:5px black solid;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-bottom:1%;
+}
+#inicio{
+
+    background: var(--colorSeccionInicio);
+}
+#inicio img{
+    width: 348px;
+    height: 448px;
+    float: left;  
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 5px 10px 15px black;
+    border: 1px pink solid;
+    border-radius:5px;
+}
+#inicio img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 500ms;
+    border-radius: 20px;
+}
+h2{
+    margin-top: 3rem;
+    text-align: center;
+    color:var(--colorSubtitulos);
+    font-family: 'Rubik', sans-serif, Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Rubik', sans-serif, Arial, Helvetica, sans-serif;
+    color:var(--colorParrafos);
+}
+#productos{
+    background: var(--colorSeccionProductos);
+
+}
+.galeria{
+    width: 320px ;
+    height: 500px;
+    background: var(--colorFondoTarjeta);
+    display: inline-block;
+    margin-left: 3.3% ;
+    border: 1px solid var(--colorBordeTarjeta);
+    margin-top: 1.5rem;
+    box-shadow: 2px 5px 15px var(--colorSombraTarjeta);
+    border-radius: 10px 50px 10px 10px;
+}
+.galeria img{
+    width: 80%;
+    height: 60%;
+    margin: 10% 5% 0% 10%;
+    transition: 500ms;
+    border-radius: 1% 15% 0% 0%;
+    box-shadow: 5px 5px 5px var(--colorBordeImagenProductos);
+}
+.galeria img:hover{
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    border-radius: 10px 40px 0px 0px;
+}
+.galeria h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif, Arial, Helvetica, sans-serif;
+    background: var(--colorFondoTituloTarjeta);
+    color:var(--colorTituloTarjeta);
+}
+.galeria p{
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0rem 0.5rem 0.5rem 0.5rem;
+    text-align: justify;
+    background: var(--colorFondoComentarioTarjeta);
+    color:var(--colorComentarioTarjeta);
+}
+#contactos{
+    background: var(--colorSeccionContactos);
+    
+}
+#contactos form{
+    max-width: 700px; 
+    width: 80%;
+    height: 60%;
+    background: linear-gradient(var(--color_1Desgradado), var(--color_2Desgradado));
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 5px 15px var(--colorSombraFormulario);
+    border-radius: 3px;
+    overflow: hidden;
+}
+form h2{
+    padding-top: 10px;
+    text-decoration: none;
+}
+.izquierda{
+    float: left;
+    width: 43%;
+    height: auto;
+    margin-left: 5%;
+}
+.derecha{
+    float: right;
+    width: 43%;
+    margin-right: 5%;
+    height: auto;
+}
+#contactos form div input{
+    display:block;
+    width: 100%;
+    height: 1.2rem;
+    padding: 0.3rem;
+    outline: none;
+}
+#contactos form div input[type="tel"], form div input[type="email"]{
+    margin-top: 6%;
+}
+#contactos form textarea{
+    width: 100%;
+    max-height: 128px;
+    min-height: 128px;
+    max-width:100%;
+    min-width: 90%;
+    outline:none;
+}
+#contactos form input[type="submit"]{
+    width: 70%;
+    margin-left: 16%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    height: 5%;
+    background: var(--colorBtnNormal);
+    color:white;
+    border: none;
+    font-size:1.2rem;
+    border-radius:10px;
+}
+#contactos form input[type="submit"]:hover{
+    background: var(--colorBtnOver);
+}
+#redesSociales{
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    max-width: 700px;
+    max-height: 150px;
+    box-shadow: 0px 5px 10px var(--colorSombraRedesSociales);
+    background:var(--colorFondoRedesSociales);
+    border-radius: 0px 0px 5px 5px;
+    opacity: 0.8;
+    transition: 500ms;
+}
+#redesSociales:hover{
+    opacity: 1;
+}
+#redesSociales a img{
+    margin-top: 0.5rem;
+    margin-left: 13.4%;
+    width: 15%;
+    height: auto;
+    -webkit-transform: scale3d(1.2);
+    transform: scale3d(1.2);
+    transition: 500ms;
+    opacity: 0.8;
+}
+#redesSociales a img:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+}
+#ubicanos{
+    background: var(--colorSeccionUbicanos);
+}
+#ubicanos div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ubicanos div iframe{
+    width: 100%;
+    height: 700px;
+    box-shadow: 3px 5px 15px black;
+}
+#socios{
+    background: var(--colorSeccionSocios);
+}
+#socios a{
+    display: block;
+    background: var(--colorFondoTarjetaSocios);
+    box-shadow: 5px 10px 12px var(--colorSombraTarjetaSocios);
+    border: 2px solid var(--colorBordeTarjetaSocios);
+    border-radius: 100px 15px 100px 15px;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    overflow: hidden;
+    padding: 3%;
+    margin: 5% auto 0% auto;
+    transition:500ms;
+    text-decoration: none;
+    
+}
+#socios a:hover{
+    background: var(--colorFondoTarjetaSociosHover);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.05);
+}
+#socios a img{
+    float:left;
+    width:300px;
+    height:300px;
+    border-radius: 40% ;
+    box-shadow: 2px 1px 5px black;
+    margin-right: 3%;
+}
+.tituloSocio{
+    display: block;
+    float:right;
+    margin-bottom:2%;
+    margin-right: 5%;
+    font-size:1.5rem;
+    color: var(--colorTituloTarjetaSocios);
+}
+.textoSocio{
+    display: block;
+    width: 50%;
+    float: right;
+    text-align: justify;
+    font-size:1rem;
+    font-family: 'Rubik', sans-serif, Arial, Helvetica, sans-serif;
+    border-radius: 0.5rem 2rem 0.5rem 2rem;
+    padding: 1rem;
+    color: var(--colorTextoTarjetaSocios);
+    background: var(--colorFondoTextoTarjetaSocios);
+}
+footer{
+    width: 100%;
+    background: var(--colorPieDePagina);
+    height: 200px;
+}   
+footer h5{
+    text-align: center;
+    padding-top:6rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--colorTextoPieDePagina);
+}
+
+/*ajustes de pantalla*/
+@media only screen and (max-width:1080px){
+    .galeria{
+        margin-left: 8% ;        
+    }
+}
+@media only screen and (max-width:950px){
+    
+    #socios a{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:800px){
+    #ContenedorPagina{
+        margin-top: 5rem;
+        overflow: hidden;
+    }
+    header{
+        margin-top:0;
+        float: left;
+        overflow: hidden;
+    }
+    .tMenu{
+        display: inline-block;
+        margin:0rem 0% 0% 10%;
+        font-size: 2.5rem;
+        font-family: 'Pacifico', cursive, Arial, Helvetica, sans-serif;
+        color: var(--colorTituloMenu);
+        padding:0;
+        text-shadow: 0px 0px 10px var(--colorSombraTituloMenu);
+    }
+    .iconoMenu{
+        width: 100%;
+        height: 5.2rem;
+        box-shadow: 0px 3px 10px;
+        padding-top: 0.2rem;
+        border-radius: 0.1rem;
+        display: block;
+        float: left;
+        background: var(--colorMenuNormal);
+    }
+    .iconoMenu div{
+        margin-top: 0.4rem;
+        margin-left:3rem;
+        border: 5px var(--colorIconoMenu) solid;
+        border-radius: 5px;
+        width: 3.7rem;
+        float:left;
+        padding-bottom: 0.6rem;
+        box-shadow: 0px 2px 7px var(--colorSombraIconoMenu);
+    }
+    .iconoMenu div li{
+        list-style: none;
+        display: block;
+        background: var(--colorIconoMenu);
+        padding: 0.2rem 0rem;
+        width: 3.5rem;
+        margin-top: 0.6rem;
+        margin-left: 0.1rem;
+        border-radius: 0.1rem;
+        box-shadow: 0px 2px 7px var(--colorSombraIconoMenu);
+    }
+    nav{
+        width: 100%;
+        height: 5.4rem;
+        overflow: hidden;
+    }
+    nav:hover{
+       
+        height: 19rem;
+    }
+    nav ul{
+        float: left;
+        display: block;
+        width:70%;
+    }
+
+    nav ul li{
+        float:none;
+        display: block;
+        width: 100%;
+    }
+    nav ul li a{
+        font-size: 1rem;
+        display:inline-block;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        padding: 0;
+        width: 12.5rem;
+        height: 1rem;
+        padding-top:0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 15%;
+        padding-right: 43%;
+        border-top: 1px var(--colorBordeMenu) solid;
+    }
+    .configuracion{
+        margin-top:15rem;
+    }
+    
+    .galeria {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .izquierda{
+        float:none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .derecha{
+        float:none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contactos form div input{
+        width: 95%;
+    }
+    #contactos form div textarea{
+        margin-top: 6%;
+        width: 98.5%;
+    }
+    #ubicanos div{
+        width: 98%;
+    }
+    #ubicanos div iframe{
+        border-bottom-right-radius: 20px;
+    }
+    #socios a{
+        width:80%;
+        border-radius: 150px 150px 15px 15px;   
+    }
+    #socios a img{
+        float:none;
+        margin: 0% calc(44% - 150px) 3% calc(50% - 150px);
+    }
+    .tituloSocio{
+        float:none;
+        text-align: center;
+        margin: auto;
+    }
+    .textoSocio{
+        float:none;
+        width: 88%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:480px){
+    header img{
+        margin: 0.2rem 0 0 0;
+    }
+    header{
+        height: 9rem;
+    }
+    header h1{
+        font-size: 2rem;
+        margin-left: 1%;
+    }
+    .configuracion{
+        margin-top:10rem;
+    }
+    #inicio img{
+        float: none;
+        margin-left: 5%;
+    }
+    
+}
+@media only screen and (max-width:380px){
+    header h1{
+        font-size: 1.4rem;
+        margin-left: 0%;
+        margin-top:25%;
+    }
+    #socios a{
+        border-radius: 50px 50px 15px 15px;
+    }
+    .tMenu{
+        margin-top:1.5rem;
+        font-size: 2rem;
+    }
+    .iconoMenu div{
+
+        margin-left:1rem;
+        
+    }
+    #inicio img{
+        width:90%;
+    }
+    .galeria{
+        width: 90%;
+    }
+}
