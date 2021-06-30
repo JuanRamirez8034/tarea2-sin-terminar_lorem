@@ -17,29 +17,29 @@
     --colorPaginaCompleta:rgb(192, 143, 97);
     --colorSeccionInicio: rgb(204, 176, 147);
     --colorSeccionProductos: rgb(204, 176, 147);
-    --colorSeccionContactos: rgb(175, 0, 73);
-    --colorSeccionUbicanos: rgb(136, 0, 79);
-    --colorSeccionSocios: rgb(0, 78, 129);
+    --colorSeccionContactos: rgba(211, 0, 88, 0.267);
+    --colorSeccionUbicanos: rgba(194, 0, 0, 0.5);
+    --colorSeccionSocios: rgba(0, 77, 129, 0.199);
     --colorPieDePagina: rgb(75, 75, 75);
     --colorTextoPieDePagina: rgb(126, 125, 125);
 
     /*colores formulario y barra redes Sociales*/
-    --color_1Desgradado: rgb(0, 106, 226);
-    --color_2Desgradado: rgb(24, 190, 255);
-    --colorSombraFormulario:rgb(3, 185, 145);
+    --color_1Desgradado: rgb(109, 107, 78);
+    --color_2Desgradado: rgb(124, 118, 102);
+    --colorSombraFormulario:rgb(119, 94, 56);
     --colorBtnNormal: rgb(158, 0, 221);
     --colorBtnOver:rgb(189, 1, 226);
-    --colorFondoRedesSociales:rgb(0, 195, 209);
+    --colorFondoRedesSociales:rgb(141, 84, 31);
     --colorSombraRedesSociales:rgb(70, 0, 0);
     
     /*colores tarjetas seccion productos*/
-    --colorFondoTarjeta:rgb(122, 94, 63);
+    --colorFondoTarjeta:rgb(133, 104, 87);
     --colorBordeTarjeta: none;
-    --colorSombraTarjeta:rgb(77, 51, 28);
+    --colorSombraTarjeta:none;
     --colorBordeImagenProductos:black;
-    --colorTituloTarjeta: rgb(255, 255, 255);
-    --colorFondoTituloTarjeta:rgb(90, 46, 21);
-    --colorComentarioTarjeta: rgb(253, 253, 253);
+    --colorTituloTarjeta: rgb(12, 12, 12);
+    --colorFondoTituloTarjeta:rgb(216, 204, 197);
+    --colorComentarioTarjeta: rgb(216, 204, 197);
     --colorFondoComentarioTarjeta:none;
 
     /*colores tarjetas Socios*/
