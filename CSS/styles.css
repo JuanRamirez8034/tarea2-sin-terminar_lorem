@@ -33,9 +33,9 @@
     --colorSombraRedesSociales:rgb(70, 0, 0);
     
     /*colores tarjetas seccion productos*/
-    --colorFondoTarjeta:rgb(110, 93, 56);
+    --colorFondoTarjeta:rgb(122, 94, 63);
     --colorBordeTarjeta: none;
-    --colorSombraTarjeta:rgb(80, 55, 32);
+    --colorSombraTarjeta:rgb(77, 51, 28);
     --colorBordeImagenProductos:black;
     --colorTituloTarjeta: rgb(255, 255, 255);
     --colorFondoTituloTarjeta:rgb(90, 46, 21);
@@ -50,7 +50,6 @@
     --colorTituloTarjetaSocios: rgb(88, 46, 46);
     --colorTextoTarjetaSocios:rgb(0, 0, 0);
     --colorFondoTextoTarjetaSocios:rgb(197, 188, 172);
-    
 }
 body{
     padding: 0;
