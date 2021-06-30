@@ -1,7 +1,7 @@
 :root{
     /*colores menu*/
-    --colorMenuNormal: rgb(163, 130, 94);
-    --colorMenuHover: rgb(100, 79, 56);
+    --colorMenuNormal: #993b29;
+    --colorMenuHover: #dca47d;
     --colorBordeMenu: rgb(102, 77, 51);
     --colorIconoMenu:rgb(236, 236, 236);
     --colorSombraIconoMenu: none;
@@ -11,16 +11,16 @@
 
     /*colores cuerpo*/
     --colorParrafos: rgb(10, 10, 10);
-    --colorSubtitulos:rgb(49, 39, 39);
+    --colorSubtitulos:rgb(63, 55, 51);
     --colorTituloPagina:white;
     --colorSombraTituloPagina:black;
-    --colorPaginaCompleta:rgb(192, 143, 97);
+    --colorPaginaCompleta:radial-gradient(rgb(187, 135, 86),rgb(138, 96, 58));
     --colorSeccionInicio: rgb(204, 176, 147);
-    --colorSeccionProductos: rgb(204, 176, 147);
-    --colorSeccionContactos: rgba(211, 0, 88, 0.267);
-    --colorSeccionUbicanos: rgba(194, 0, 0, 0.5);
+    --colorSeccionProductos: radial-gradient(circle at center,#300700 69%,#000000 91%);
+    --colorSeccionContactos:#5a0c1c;
+    --colorSeccionUbicanos: rgba(133, 30, 12, 0.5);
     --colorSeccionSocios: rgba(0, 77, 129, 0.199);
-    --colorPieDePagina: rgb(75, 75, 75);
+    --colorPieDePagina: rgb(32, 32, 32);
     --colorTextoPieDePagina: rgb(126, 125, 125);
 
     /*colores formulario y barra redes Sociales*/
@@ -33,7 +33,7 @@
     --colorSombraRedesSociales:rgb(70, 0, 0);
     
     /*colores tarjetas seccion productos*/
-    --colorFondoTarjeta:rgb(133, 104, 87);
+    --colorFondoTarjeta:radial-gradient(rgb(133, 104, 87) , #5a0c1c);
     --colorBordeTarjeta: none;
     --colorSombraTarjeta:none;
     --colorBordeImagenProductos:black;
@@ -50,6 +50,7 @@
     --colorTituloTarjetaSocios: rgb(88, 46, 46);
     --colorTextoTarjetaSocios:rgb(0, 0, 0);
     --colorFondoTextoTarjetaSocios:rgb(197, 188, 172);
+    
 }
 body{
     padding: 0;
